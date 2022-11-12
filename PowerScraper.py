@@ -99,6 +99,5 @@ def main():
     print(table)
 
 
-# Prevent program from being run if imported
 if __name__ == '__main__':
     main()
