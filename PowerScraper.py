@@ -71,7 +71,7 @@ def get_deaths(source):
 
 
 def get_kd_data(kd_num):
-    source = "source/kd" + str(kd_num) + ".html"
+    source = f"source/kd{kd_num}.html"
     t4_kills, t5_kills = get_t4_kills(source), get_t5_kills(source)
     total_kp = ((t4_kills * 10) + (t5_kills * 20)) / 1000
     return [get_power(source)/1000, total_kp, t4_kills, t5_kills, get_deaths(source)]
